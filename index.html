@@ -5,105 +5,158 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+
     <title>Projeto BK</title>
 </head>
 
 <body>
-    <header>
-        <div>
-            <img src="src/assets/Projeto BKB Code 1.png" alt="Projeto BKB Code">
+
+    <header class="cabecalho">
+        <div class="container">
+            <img id="logo" src="src/assets/Projeto BKB Code 1.png" alt="Projeto BKB Code">
             <img src="src/assets/Logos 1.png" alt="Logo BKB + Kenzie">
         </div>
-        <img src="src/assets/banner.png" alt="Banner com hamburgueres">
     </header>
+
     <main>
-        <section>
-            <div>
-                <img src="src/assets/combo_whopper.png" alt="Combo Whopper">
-                <h3>Combo Whopper</h3>
-                <p>R$: 32.90</p>
-                <button type="button">Adicionar</button>
-            </div>
-            <div>
-                <img src="src/assets/bk_chicken.png" alt="BK Chicken">
-                <h3>BK Chicken</h3>
-                <p>R$: 16.90</p>
-                <button type="button">Adicionar</button>
-            </div>
-            <div>
-                <img src="src/assets/sorvete.png" alt="Balde de Chocolate">
-                <h3>Balde de Chocolate</h3>
-                <p>R$: 14.90</p>
-                <button type="button">Adicionar</button>
-            </div>
-            <div>
-                <img src="src/assets/cheddar_duplo.png" alt="Cheddar duplo">
-                <h3>Cheddar Duplo</h3>
-                <p>R$: 13.90</p>
-                <button type="button">Adicionar</button>
-            </div>
-            <div>
-                <img src="src/assets/whopper_rodeio.png" alt="Combo Whopper Rodeio">
-                <h3>Combo Whopper Rodeio</h3>
-                <p>R$: 38.90</p>
-                <button type="button">Adicionar</button>
-            </div>
-            <div>
-                <img src="src/assets/onion_rings.png" alt="Orion rings">
-                <h3>Orion Rings</h3>
-                <p>R$: 11.90</p>
-                <button type="button">Adicionar</button>
-            </div>
-            <div>
-                <img src="src/assets/bk_mix.png" alt="BK Mix Ovomaltine">
-                <h3>BK Mix Ovomaltine</h3>
-                <p>R$: 9.25</p>
-                <button type="button">Adicionar</button>
-            </div>
-            <div>
-                <img src="src/assets/cheddar.png" alt="Cheddar">
-                <h3>Cheddar</h3>
-                <p>R$: 11.90</p>
-                <button type="button">Adicionar</button>
-            </div>
-            <div>
-                <img src="src/assets/shake.png" alt="Shake Brownie">
-                <h3>Shake Brownie</h3>
-                <p>R$: 11.35</p>
-                <button type="button">Adicionar</button>
-            </div>
-            <div>
-                <img src="src/assets/mix_oreo.png" alt="Bk Mix Oreo">
-                <h3>BK Mix Oreo</h3>
-                <p>R$: 9.25</p>
-                <button type="button">Adicionar</button>
+        <section class="banner">
+            <img src="src/assets/banner.png" alt="Banner com hamburgueres">
+        </section>
+
+        <section class="secaoProdutos">
+            <div class="container">
+                <ul class="produtosLista">
+
+                    <li class="cardProduto">
+                        <img src="src/assets/combo_whopper.png" alt="Combo Whopper">
+                        <h3>Combo Whopper</h3>
+                        <p>R$: 32.90</p>
+                        <button type="button">Adicionar</button>
+                    </li>
+
+                    <li class="cardProduto">
+                        <img src="src/assets/bk_chicken.png" alt="BK Chicken">
+                        <h3>BK Chicken</h3>
+                        <p>R$: 16.90</p>
+                        <button type="button">Adicionar</button>
+                    </li>
+
+                    <li class="cardProduto">
+                        <img src="src/assets/sorvete.png" alt="Balde de Chocolate">
+                        <h3>Balde de Chocolate</h3>
+                        <p>R$: 14.90</p>
+                        <button type="button">Adicionar</button>
+                    </li>
+
+                    <li class="cardProduto">
+                        <img src="src/assets/cheddar_duplo.png" alt="Cheddar duplo">
+                        <h3>Cheddar Duplo</h3>
+                        <p>R$: 13.90</p>
+                        <button type="button">Adicionar</button>
+                    </li>
+
+                    <li class="cardProduto">
+                        <img src="src/assets/whopper_rodeio.png" alt="Combo Whopper Rodeio">
+                        <h3>Combo Whopper Rodeio</h3>
+                        <p>R$: 38.90</p>
+                        <button type="button">Adicionar</button>
+                    </li>
+
+                    <li class="cardProduto">
+                        <img src="src/assets/onion_rings.png" alt="Orion rings">
+                        <h3>Orion Rings</h3>
+                        <p>R$: 11.90</p>
+                        <button type="button">Adicionar</button>
+                    </li>
+
+                    <li class="cardProduto">
+                        <img src="src/assets/bk_mix.png" alt="BK Mix Ovomaltine">
+                        <h3>BK Mix Ovomaltine</h3>
+                        <p>R$: 9.25</p>
+                        <button type="button">Adicionar</button>
+                    </li>
+
+                    <li class="cardProduto">
+                        <img src="src/assets/cheddar.png" alt="Cheddar">
+                        <h3>Cheddar</h3>
+                        <p>R$: 11.90</p>
+                        <button type="button">Adicionar</button>
+                    </li>
+
+                    <li class="cardProduto">
+                        <img src="src/assets/shake.png" alt="Shake Brownie">
+                        <h3>Shake Brownie</h3>
+                        <p>R$: 11.35</p>
+                        <button type="button">Adicionar</button>
+                    </li>
+
+                    <li class="cardProduto">
+                        <img src="src/assets/mix_oreo.png" alt="Bk Mix Oreo">
+                        <h3>BK Mix Oreo</h3>
+                        <p>R$: 9.25</p>
+                        <button type="button">Adicionar</button>
+                    </li>
+                </ul>
             </div>
         </section>
+
     </main>
-    <footer>
-        <section>
-            <div>
-                <h3>Olá  Kenzie |  Minha sacola</h3>
-                <p>Retirar no balcão</p>
+
+    <footer class="redape">
+
+        <section class="carrinho">
+
+            <header class="infoResumo">
+                <div class="container">
+                    <div class="infoUsuario">
+                        <h3>Olá Kenzie | Minha sacola</h3>
+                        <p>Retirar no balcão</p>
+                    </div>
+
+                    <p class="infoPreco">Total: R$ 32.90</p>
+                </div>
+            </header>
+
+            <div class="container">
+                <div class="resumoPedido">
+
+                    <ul class="listaProdutos">
+
+                        <li class="cardProduto">
+
+                            <div class="infoNome">
+                                <img src="src/assets/combo_whopper.png" alt="Combo Whopper">
+                                <p>Combo Whopper</p>
+                            </div>
+
+                            <div class="infoPreco">
+                                <p>R$: 32.90</p>
+                                <button>
+                                    <img src="src/assets/lixo.png" alt="Lixeira para remover o produto">
+                                </button>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="btnFinalizaPedido">
+                    <div>
+                        <button type="button">Finalizar Pedido</button>
+                        <button type="button">Cancelar Pedido</button>
+                    </div>
+                </div>
             </div>
-            <p>Total: R$ 32.90</p>
         </section>
-        <section>
-            <div>
-                <div>
-                    <img src="src/assets/combo_whopper.png" alt="Combo Whopper">
-                    <p>Combo Whopper</p>
-                </div>
-                <div>
-                    <p>R$: 32.90</p>
-                    <img src="src/assets/lixo.png" alt="Lixeira para remover o produto">
-                </div>
-                <div>
-                    <button type="button">Finalizar Pedido</button>
-                    <button type="button">Cancelar Pedido</button>
-                </div>
-            </div>
-        </section>
+
     </footer>
 </body>
 
