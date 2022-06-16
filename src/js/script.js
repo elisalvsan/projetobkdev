@@ -11,19 +11,26 @@ function criarcardProduto(produto) {
         <p>R$: ${produto.preco}</p>
         <button type="button">Adicionar</button> 
     `
-    produtosLista.appendChild(tagLi)
+    return tagLi
 
 }
 
-const produtoExemplo = {
+//criar funçao para listar
+function listarProdutos(listaProdutos) {
 
-    id: 0,
-    nome: "Combo Whopper",
-    preco: 32.90,
-    image: "./src/assets/combo_whopper.png"
+    //loop para recuperar cada produto
+    for (let i = 0; i < listaProdutos.length; i++) {
+
+        const produto = listaProdutos[i];
+
+        //passar para função(criar o card produto)
+        const template = criarcardProduto(produto);
+        //mostrar na tela
+        produtosLista.appendChild(template);
+    }
 
 }
+listarProdutos(produtos)
 
 
-
-criarcardProduto(produtoExemplo)
+//função para adicionar ao carrinho
